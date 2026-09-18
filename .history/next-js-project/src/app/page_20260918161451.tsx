@@ -1,0 +1,13 @@
+import Image from "next/image";
+import Footer from "../components/Footer";
+import NavBar from "@/components/NavBar";
+
+export default function Home() {
+  return (
+    <div>
+      <main className="flex flex-col item-center justify-center min-h-[70vh]">
+        <h1 className="text-4xl font-bold text-orange-600 ">Bem-vindo ao Sabor & Arte</h1>
+      </main>
+    </div>
+  );
+}

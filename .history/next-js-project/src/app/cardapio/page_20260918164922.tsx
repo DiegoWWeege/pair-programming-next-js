@@ -1,0 +1,18 @@
+import BotaoFavorito from "@/components/BotaoFavorito"
+
+export default async function PaginaCardapio(){
+    
+    const res = await fetch("https://api-restaurante-5iqb.onrender.com/api/produtos",{
+        next: {revalidate: 60}
+    });
+    
+    const produtos = await  res.json();
+
+    return (
+        <main className="p-10 max-w-7xl mx-auto">
+            <div className="">
+
+            </div>
+        </main>
+    )
+}
