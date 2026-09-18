@@ -87,4 +87,4 @@ Quando temos alguma interação com o usuário também é possível utilizar o u
 
 - useState armazena valores que podem mudar ao longo do tempo.
 
--useEffect gerencia os efeitos colaterais que podem ocorrer a algum componente fora do fluxo normal de renderização.
+- useEffect gerencia os efeitos colaterais que podem ocorrer a algum componente fora do fluxo normal de renderização.
