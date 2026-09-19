@@ -1,0 +1,11 @@
+export default function LoadingCardapio(){
+    const skeletons = Array.from({length: 6})
+
+    return(
+        <main className="p-10 max-w-7xl mx-auto">
+            <div className="h-10 w-48 bg-gray-200 animate-pulse rounded-md mb-10">
+
+            </div>
+        </main>
+    )
+}

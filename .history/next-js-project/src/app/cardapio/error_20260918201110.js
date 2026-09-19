@@ -1,0 +1,8 @@
+"use client"
+import { useEffect } from "react"
+
+export default function ErrorCardapio({error, reset}){
+    useEffect(() => {
+        console.error("Erro capturado no ")
+    },[error])
+}

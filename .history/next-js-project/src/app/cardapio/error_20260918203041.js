@@ -1,0 +1,31 @@
+"use client"
+import { useEffect } from "react"
+
+export default function ErrorCardapio({error, reset}){
+    useEffect(() => {
+        console.error("Erro capturado no cardápio: ", error)
+    },[error]);
+
+    return(
+        <main className="flex flex-col items-center justify-center min-h-[60vh] p-10 text-center">
+            <div className="bg-red-50 p-8 rounded-3xl border border-red-100 max-w-wd">
+                <h2 className="text-4xl mb-4">
+                    Chef atenção
+                </h2>
+                <h1 className="text-2xl font-bold text-gray-800">
+                    Ops! A cozinha está em manutenção
+                </h1>
+
+                <p className="text-gray-600 mt-4">
+                    Não conseguimos carregar os pratos neste momento. Nossa equipe já foi avisada!
+                </p>
+
+                <div className="mt-8 flex flex-col gap-3">
+                    <button onClick={() => reset()} class>
+                        Tentar Novamente
+                    </button>
+                </div>
+            </div>
+        </main>
+    )
+}

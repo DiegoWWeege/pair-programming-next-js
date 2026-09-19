@@ -1,0 +1,18 @@
+export default function LoadingCardapio(){
+    const skeletons = Array.from({length: 6})
+
+    return(
+        <main className="p-10 max-w-7xl mx-auto">
+            <div className="h-10 w-48 bg-gray-200 animate-pulse rounded-md mb-10">
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {skeletons.map((index) => (
+                    <div key ={index} className="border-">
+
+                    </div>
+                ))}
+            </div>
+        </main>
+    )
+}
